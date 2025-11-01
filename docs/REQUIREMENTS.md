@@ -32,6 +32,7 @@ Not so important since this is a demo app just to learn. But here you go:
   - ./apps for apps
   - ./packages for shared types, etc
 - sqlite as the store
+- simple node, we can't use bun
 - backend api in NestJS under ./apps/backend
   - typeorm for db
   - swagger spec auto generated
