@@ -1,0 +1,7 @@
+- No HTTP/Swagger/validators in services.
+- Only interacts with other domains via their **public services**.
+- Throws **typed domain errors** only.
+- Uses own repositories/ports; transactions where needed.
+- Service DTOs are **pure TS**; mapping done at the controller/mapper.
+- Clear decision on single vs split services; naming matches criteria.
+- Logs/metrics at domain level; no transport concerns.
