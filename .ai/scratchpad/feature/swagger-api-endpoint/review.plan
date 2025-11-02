@@ -1,0 +1,12 @@
+# Review Plan for Swagger API Endpoint Feature
+
+## Backend
+
+- [ ] **apps/backend/src/main.ts**:
+  - [ ] Verify that the Swagger documentation is correctly configured and generated.
+  - [ ] Check that the API endpoint for Swagger UI is `/api`.
+  - [ ] Ensure that the application still builds and runs without errors.
+
+**Suggested Review Guides:**
+- `docs/review-guides/best-practice.md`
+- `docs/review-guides/service.md`
