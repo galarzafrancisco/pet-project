@@ -1,0 +1,19 @@
+description="Opens a pull request from the current branch to the main branch"
+prompt = """
+
+Pre-requisite:
+1. Ensure we are not already on the main branch.
+2. Ensure there are no uncommitted changes in the working directory.
+If any of these conditions are not met, inform the user and abort the operation.
+
+Steps:
+1. Ensure the current branch is pushed to the remote repository. If not, push it.
+2. Open a pull request using the `gh` CLI: `gh pr create --base main --head <current-branch> --title "<pr-title>" --body "<pr-description>"`.
+
+Fields:
+- pr-title: A short, descriptive title for the pull request.
+- pr-description:
+  - Functional Changes: A summary of the changes made in this pull request that affect functionality. Make it user centric.
+  - Technical Changes: A summary of the technical changes made in this pull request.
+  - Fixes/Improvements: A list of any bugs fixed or improvements made that don't fit into the above categories.
+"""
