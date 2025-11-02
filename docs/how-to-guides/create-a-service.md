@@ -54,9 +54,9 @@ If you expose more than one service, keep a **facade** (e.g., `ProductService`) 
 
 ```bash
 cd apps/backend
-npx nest g service <domain> --flat --no-spec
+npx nest g service <domain> --no-spec
 # e.g.
-npx nest g service product --flat --no-spec
+npx nest g service product --no-spec
 ```
 
 ---

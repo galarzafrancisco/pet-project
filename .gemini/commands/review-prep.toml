@@ -2,13 +2,11 @@ description="Identifies changes made in a git feature branch"
 prompt = """
 
 Steps:
-1. Identify current branch using `git branch --show-current`.
-2. Identify uncommitted changes using `git status --porcelain`.
-3. Identify files changed with respect to `main` branch using `git diff --name-only main...HEAD`.
-4. List files in `docs/review-guides` to know which review guides are available.
-5. Write a review plan to `.ai/scratchpad/<current_branch_name>/review.plan`. Plan must:
+1. execute `.gemini/scripts/review-prep.sh` -- it will generate a `review.plan` file with a list of files changed that need to be reviewed.
+2. Read the `review.plan` file.
+3. Generate a more cohesive review plan that should:
 - be a checklist style so the reviewer can tick tasks off when done.
 - group / summarizing the changes to be reviewed by domain (e.g. backend controller, frontend component, shared package, type definitions, tests, etc).
 - for each domain, suggest which review guides from `docs/review-guides` to use.
-
+4. Write the review plan back to the `review.plan` file.
 """

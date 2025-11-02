@@ -1,0 +1,19 @@
+description="Commits changes to the current branch"
+prompt = """
+
+Pre-requisite:
+1. Ensure .gitignore includes
+- node_modules
+- .env
+- dist
+- .DS_Store
+- any other files/folders that should not be tracked by git
+
+Steps:
+1. Add all changes to staging using `git add .` or specific files using `git add <file-path>`.
+2. Make a commit message summarizing the changes made -- keep it short and descriptive.
+3. Ask the user if they are okay with the commit message.
+4. If the user approves, run `git commit -m "<commit-message>"`.
+5. If the user disapproves, ask for a revised commit message and repeat step 3.
+
+"""

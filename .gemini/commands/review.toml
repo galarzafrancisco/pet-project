@@ -4,8 +4,10 @@ prompt = """
 Steps:
 1. Read review plan from ``.ai/scratchpad/<feature-name>/review.plan`. -- If not found, run the `/review-prep` slash command first.
 2. Start a review session using the review plan.
-3. Write feedback in `.ai/scratchpad/<feature-name>/review.feedback`. Feedback should be:
+3. Write feedback in `.ai/scratchpad/<feature-name>/review.feedback.md`. Feedback should be:
 - consumed by a dev to fix issues
+- make it a checklist so that the developer can mark items as done
+- organized by file path
 - specific and actionable
 - concise and to the point
 - reference `docs/how-to-guides/<guide-name>.md` and/or `docs/best-practices/<practice-name>.md` where applicable

@@ -1,0 +1,13 @@
+description="Fixes issues found during the review of a git feature branch"
+prompt = """
+
+Steps:
+1. Read review feedback from ``.ai/scratchpad/<feature-name>/review.feedback.md`. -- If not found, notify that there is no review feedback available and exit.
+2. Implement fixes based on the review feedback.
+- Use guides referenced in the feedback where applicable.
+3. Ensure all issues from the feedback checklist are addressed.
+4. Tick off items in the checklist as they are resolved
+- from `.ai/scratchpad/<feature-name>/review.feedback.md`.
+- from `.ai/scratchpad/<feature-name>/review.plan`.
+
+"""

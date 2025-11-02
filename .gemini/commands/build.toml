@@ -1,0 +1,8 @@
+description="Builds the stack"
+prompt = """
+
+Steps:
+1. Go to the root
+2. Run `npm run build`
+
+"""

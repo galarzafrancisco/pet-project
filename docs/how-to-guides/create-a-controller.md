@@ -14,9 +14,9 @@ Controllers are the **transport boundary** for HTTP. They **adapt** API DTOs to 
 **Generate:**
 ```bash
 cd apps/backend
-npx nest g controller <domain> --flat --no-spec
+npx nest g controller <domain> --no-spec
 # e.g.
-npx nest g controller product --flat --no-spec
+npx nest g controller product --no-spec
 ```
 
 ---

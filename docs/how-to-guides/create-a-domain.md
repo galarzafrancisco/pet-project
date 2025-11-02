@@ -26,9 +26,9 @@ npx nest g module product
 
 **Command:**
 ```bash
-npx nest g service <domain> --flat --no-spec
+npx nest g service <domain> --no-spec
 # e.g.
-npx nest g service product --flat --no-spec
+npx nest g service product --no-spec
 ```
 
 
@@ -53,9 +53,9 @@ You’ll typically add `src/<domain>/<domain>.entity.ts` and wire it in the modu
 
 **Command:**
 ```bash
-npx nest g controller <domain> --flat --no-spec
+npx nest g controller <domain> --no-spec
 # e.g.
-npx nest g controller product --flat --no-spec
+npx nest g controller product --no-spec
 ```
 
 
