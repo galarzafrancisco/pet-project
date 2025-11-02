@@ -5,3 +5,4 @@
 - Service DTOs are **pure TS**; mapping done at the controller/mapper.
 - Clear decision on single vs split services; naming matches criteria.
 - Logs/metrics at domain level; no transport concerns.
+- If it creates entity repos, they are imported in the module via TypeOrmModule.forFeature.

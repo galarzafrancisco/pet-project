@@ -23,18 +23,7 @@ apps/backend/src/product/product.entity.ts
 
 ---
 
-## 2. Command
-
-```bash
-cd apps/backend
-npx nest g resource product --no-spec --type entity
-# or manually:
-npx nest g class product/product.entity --flat
-```
-
----
-
-## 3. Rules
+## 2. Rules
 
 ✅ **SQLite-first design**
 - Use `TEXT`, `INTEGER`, `REAL`, and `DATETIME`.  
@@ -52,7 +41,7 @@ npx nest g class product/product.entity --flat
 
 ---
 
-## 4. Example (SQLite-First, Portable)
+## 3. Example (SQLite-First, Portable)
 
 ```ts
 // apps/backend/src/product/product.entity.ts
@@ -111,7 +100,7 @@ export class ProductEntity {
 
 ---
 
-## 5. Column Standards
+## 4. Column Standards
 
 | Concept | SQLite type | Postgres type | Rule |
 |----------|--------------|---------------|------|
@@ -125,7 +114,7 @@ export class ProductEntity {
 
 ---
 
-## 6. Soft Delete
+## 5. Soft Delete
 
 - Always use `@DeleteDateColumn`.  
 - SQLite: enforce “unique while active” in services.  
@@ -138,7 +127,7 @@ export class ProductEntity {
 
 ---
 
-## 7. Migrations
+## 6. Migrations
 
 **Local/dev (SQLite):**
 ```ts
@@ -155,7 +144,7 @@ Generate, review, and commit migrations.
 
 ---
 
-## 8. Upgrade Paths
+## 7. Upgrade Paths
 
 **→ Postgres**
 - Change `datetime` → `timestamptz`, `simple-json` → `jsonb`.
@@ -169,7 +158,7 @@ Generate, review, and commit migrations.
 
 ---
 
-## 9. Don’ts
+## 8. Don’ts
 
 🚫 No eager relations.  
 🚫 No business logic.  
