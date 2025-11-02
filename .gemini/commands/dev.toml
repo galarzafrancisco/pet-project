@@ -14,4 +14,6 @@ Steps:
 4. Repeat step 3 until all items in the plan are checked off.
 5. Once all items are complete, invoke the /pr slash command to open a pull request.
 
+CRITICAL: DO NOT MERGE TO MAIN -- THIS IS A USER IN THE LOOP STEP.
+
 """
