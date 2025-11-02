@@ -13,4 +13,9 @@ Steps:
 2. Use `git checkout -b feature/<feature-name>` to create and switch to a new feature branch.
 3. Create a `.ai/scratchpad/<feature-name>/` directory for AI-related work.
 
+If the user provided a description or goal:
+- create a goal file at `.ai/scratchpad/<feature-name>/goal.md`
+- make a high level plan for the feature and save it to `.ai/scratchpad/<feature-name>/plan.md`. Make it like a checklist so the user can check off tasks as they complete them.
+- invoke the /dev slash command to implement the feature
+
 """

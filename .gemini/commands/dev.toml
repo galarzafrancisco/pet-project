@@ -1,0 +1,17 @@
+description="Implements a feature"
+prompt = """
+
+Steps:
+1. Identify the current git branch name using `git branch --show-current`.
+2. Read plan from `.ai/scratchpad/<feature-name>/plan.md`.
+3. For each unchecked item in the plan:
+   - Implement the item.
+   - Invoke the /commit slash command to commit the changes with a descriptive message.
+   - Invoke the /review-prep slash command
+   - Invoke the /review slash command to get feedback
+   - Invoke the /review-fixer slash command to fix any issues found
+   - Invoke the /commit slash command again to commit the fixes.
+4. Repeat step 3 until all items in the plan are checked off.
+5. Once all items are complete, invoke the /pr slash command to open a pull request.
+
+"""
