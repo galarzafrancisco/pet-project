@@ -1,0 +1,14 @@
+description="Identifies changes made in a git feature branch"
+prompt = """
+
+Steps:
+1. Identify current branch using `git branch --show-current`.
+2. Identify uncommitted changes using `git status --porcelain`.
+3. Identify files changed with respect to `main` branch using `git diff --name-only main...HEAD`.
+4. List files in `docs/review-guides` to know which review guides are available.
+5. Write a review plan to `.ai/scratchpad/<current_branch_name>/review.plan`. Plan must:
+- be a checklist style so the reviewer can tick tasks off when done.
+- group / summarizing the changes to be reviewed by domain (e.g. backend controller, frontend component, shared package, type definitions, tests, etc).
+- for each domain, suggest which review guides from `docs/review-guides` to use.
+
+"""

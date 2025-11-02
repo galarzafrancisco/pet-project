@@ -1,0 +1,16 @@
+description="Creates a new feature"
+prompt = """
+
+Please create a new git feature.
+
+Pre-requisites:
+1. Must be in `main` branch. If not, notify user and refuse to proceed.
+2. Must have no uncommitted changes. If there are uncommitted changes, notify user and refuse to proceed.
+3. User must provide a feature name or description.
+
+Steps:
+1. Validate pre-requisites.
+2. Use `git checkout -b feature/<feature-name>` to create and switch to a new feature branch.
+3. Create a `.ai/scratchpad/<feature-name>/` directory for AI-related work.
+
+"""

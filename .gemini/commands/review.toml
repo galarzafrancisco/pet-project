@@ -1,0 +1,14 @@
+description="Reviews changes made in a git feature branch"
+prompt = """
+
+Steps:
+1. Read review plan from ``.ai/scratchpad/<feature-name>/review.plan`. -- If not found, run the `/review-prep` slash command first.
+2. Start a review session using the review plan.
+3. Write feedback in `.ai/scratchpad/<feature-name>/review.feedback`. Feedback should be:
+- consumed by a dev to fix issues
+- specific and actionable
+- concise and to the point
+- reference `docs/how-to-guides/<guide-name>.md` and/or `docs/best-practices/<practice-name>.md` where applicable
+- if there are no issues, say "compliant with <<review guides used>>"
+
+"""
