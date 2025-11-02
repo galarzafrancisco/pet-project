@@ -3,8 +3,9 @@ prompt = """
 
 Pre-requisite:
 1. Ensure we are not already on the main branch.
-2. Ensure there are no uncommitted changes in the working directory.
-If any of these conditions are not met, inform the user and abort the operation.
+2. Ensure there are no uncommitted changes in the working directory. If there are, use the /commit slash command to commit them first
+If any of these pre-requisites are not met, inform the user and abort the process.
+
 
 Steps:
 1. Ensure the current branch is pushed to the remote repository. If not, push it.
